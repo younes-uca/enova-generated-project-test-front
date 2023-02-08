@@ -23,7 +23,7 @@ import ma.enova.radio.zynerator.process.Result;
 
 @Api("Manages immobilistion services")
 @RestController
-@RequestMapping("/immobilistion")
+@RequestMapping("/api/immobilistion")
 public class ImmobilistionRestAdmin  extends AbstractController<Immobilistion, ImmobilistionDto, ImmobilistionHistory, ImmobilistionCriteria, ImmobilistionHistoryCriteria, ImmobilistionAdminService, ImmobilistionConverter> {
 
 

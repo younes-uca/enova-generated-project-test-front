@@ -23,7 +23,7 @@ import ma.enova.radio.zynerator.process.Result;
 
 @Api("Manages categoriePersonnel services")
 @RestController
-@RequestMapping("/categoriePersonnel")
+@RequestMapping("/api/categoriePersonnel")
 public class CategoriePersonnelRestAdmin  extends AbstractController<CategoriePersonnel, CategoriePersonnelDto, CategoriePersonnelHistory, CategoriePersonnelCriteria, CategoriePersonnelHistoryCriteria, CategoriePersonnelAdminService, CategoriePersonnelConverter> {
 
 

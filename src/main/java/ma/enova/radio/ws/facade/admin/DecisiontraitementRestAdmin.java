@@ -23,7 +23,7 @@ import ma.enova.radio.zynerator.process.Result;
 
 @Api("Manages decisiontraitement services")
 @RestController
-@RequestMapping("/decisiontraitement")
+@RequestMapping("/api/decisiontraitement")
 public class DecisiontraitementRestAdmin  extends AbstractController<Decisiontraitement, DecisiontraitementDto, DecisiontraitementHistory, DecisiontraitementCriteria, DecisiontraitementHistoryCriteria, DecisiontraitementAdminService, DecisiontraitementConverter> {
 
 

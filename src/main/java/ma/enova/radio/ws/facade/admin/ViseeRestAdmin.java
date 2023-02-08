@@ -23,7 +23,7 @@ import ma.enova.radio.zynerator.process.Result;
 
 @Api("Manages visee services")
 @RestController
-@RequestMapping("/visee")
+@RequestMapping("/api/visee")
 public class ViseeRestAdmin  extends AbstractController<Visee, ViseeDto, ViseeHistory, ViseeCriteria, ViseeHistoryCriteria, ViseeAdminService, ViseeConverter> {
 
 

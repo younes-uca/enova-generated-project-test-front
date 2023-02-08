@@ -41,7 +41,7 @@ import ma.enova.radio.workflow.admin.process.prescriptionradiotherapie.finirtrai
 
 @Api("Manages prescriptionRadiotherapie services")
 @RestController
-@RequestMapping("/prescriptionRadiotherapie")
+@RequestMapping("/api/prescriptionRadiotherapie")
 public class PrescriptionRadiotherapieRestAdmin  extends AbstractController<PrescriptionRadiotherapie, PrescriptionRadiotherapieDto, PrescriptionRadiotherapieHistory, PrescriptionRadiotherapieCriteria, PrescriptionRadiotherapieHistoryCriteria, PrescriptionRadiotherapieAdminService, PrescriptionRadiotherapieConverter> {
 
      @Autowired

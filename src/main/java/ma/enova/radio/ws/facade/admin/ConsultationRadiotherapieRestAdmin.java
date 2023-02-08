@@ -26,7 +26,7 @@ import ma.enova.radio.workflow.admin.process.consultationradiotherapie.save.Cons
 
 @Api("Manages consultationRadiotherapie services")
 @RestController
-@RequestMapping("/consultationRadiotherapie")
+@RequestMapping("/api/consultationRadiotherapie")
 public class ConsultationRadiotherapieRestAdmin  extends AbstractController<ConsultationRadiotherapie, ConsultationRadiotherapieDto, ConsultationRadiotherapieHistory, ConsultationRadiotherapieCriteria, ConsultationRadiotherapieHistoryCriteria, ConsultationRadiotherapieAdminService, ConsultationRadiotherapieConverter> {
 
      @Autowired
