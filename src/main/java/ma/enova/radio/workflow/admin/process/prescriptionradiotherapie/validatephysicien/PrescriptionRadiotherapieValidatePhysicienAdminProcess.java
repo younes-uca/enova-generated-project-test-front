@@ -1,0 +1,6 @@
+package ma.enova.radio.workflow.admin.process.prescriptionradiotherapie.validatephysicien;
+
+import ma.enova.radio.zynerator.process.AbstractProcess;
+
+public interface PrescriptionRadiotherapieValidatePhysicienAdminProcess extends AbstractProcess<PrescriptionRadiotherapieValidatePhysicienAdminInput, PrescriptionRadiotherapieValidatePhysicienAdminOutput> {
+}

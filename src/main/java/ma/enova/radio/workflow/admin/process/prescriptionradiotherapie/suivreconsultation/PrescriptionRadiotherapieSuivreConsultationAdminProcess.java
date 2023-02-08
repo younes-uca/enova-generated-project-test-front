@@ -1,0 +1,6 @@
+package ma.enova.radio.workflow.admin.process.prescriptionradiotherapie.suivreconsultation;
+
+import ma.enova.radio.zynerator.process.AbstractProcess;
+
+public interface PrescriptionRadiotherapieSuivreConsultationAdminProcess extends AbstractProcess<PrescriptionRadiotherapieSuivreConsultationAdminInput, PrescriptionRadiotherapieSuivreConsultationAdminOutput> {
+}

@@ -1,0 +1,6 @@
+package ma.enova.radio.workflow.admin.process.prescriptionradiotherapie.finirtraitement;
+
+import ma.enova.radio.zynerator.process.AbstractProcess;
+
+public interface PrescriptionRadiotherapieFinirTraitementAdminProcess extends AbstractProcess<PrescriptionRadiotherapieFinirTraitementAdminInput, PrescriptionRadiotherapieFinirTraitementAdminOutput> {
+}
