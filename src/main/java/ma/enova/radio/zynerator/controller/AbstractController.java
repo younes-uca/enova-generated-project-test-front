@@ -141,8 +141,9 @@ public class AbstractController<T extends AuditBusinessObject, DTO extends BaseD
         HttpStatus status = HttpStatus.NO_CONTENT;
         if (criteria != null) {
             list = converter.copyIncludeExcludeItems(list, criteria.getIncludes(), criteria.getExcludes());
-            dtos = converter.toDto(list);
         }
+        dtos = converter.toDto(list);
+
         if (dtos != null && !dtos.isEmpty())
             status = HttpStatus.OK;
 
