@@ -49,7 +49,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests().antMatchers("/actuator/info").permitAll();
 
             http.authorizeRequests().antMatchers("/api/admin/login").permitAll();
-            http.authorizeRequests().antMatchers("/api/admin/").hasAnyAuthority(AuthoritiesConstants.ADMIN);
+            http.authorizeRequests().antMatchers("/").permitAll();//.hasAnyAuthority(AuthoritiesConstants.ADMIN);
 
         // http.authorizeRequests().anyRequest().authenticated();
 
@@ -59,7 +59,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         .httpBasic();*/
 
         // http.formLogin();
-        // http.authorizeRequests().anyRequest().permitAll();
+         http.authorizeRequests().anyRequest().permitAll();
         http.addFilter(new JWTAuthenticationFilter(authenticationManager()));
         http.addFilterBefore(new JWTAuthorizationFiler(), UsernamePasswordAuthenticationFilter.class);
     }

@@ -23,7 +23,7 @@ import ma.enova.radio.zynerator.process.Result;
 
 @Api("Manages personnel services")
 @RestController
-@RequestMapping("/api/personnel")
+@RequestMapping("/personnel")
 public class PersonnelRestAdmin  extends AbstractController<Personnel, PersonnelDto, PersonnelHistory, PersonnelCriteria, PersonnelHistoryCriteria, PersonnelAdminService, PersonnelConverter> {
 
 

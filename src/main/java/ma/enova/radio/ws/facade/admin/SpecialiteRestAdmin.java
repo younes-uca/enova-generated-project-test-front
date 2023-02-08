@@ -23,7 +23,7 @@ import ma.enova.radio.zynerator.process.Result;
 
 @Api("Manages specialite services")
 @RestController
-@RequestMapping("/api/specialite")
+@RequestMapping("/specialite")
 public class SpecialiteRestAdmin  extends AbstractController<Specialite, SpecialiteDto, SpecialiteHistory, SpecialiteCriteria, SpecialiteHistoryCriteria, SpecialiteAdminService, SpecialiteConverter> {
 
 

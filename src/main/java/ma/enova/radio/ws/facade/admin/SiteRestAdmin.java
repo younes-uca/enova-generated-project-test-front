@@ -23,7 +23,7 @@ import ma.enova.radio.zynerator.process.Result;
 
 @Api("Manages site services")
 @RestController
-@RequestMapping("/api/site")
+@RequestMapping("/site")
 public class SiteRestAdmin  extends AbstractController<Site, SiteDto, SiteHistory, SiteCriteria, SiteHistoryCriteria, SiteAdminService, SiteConverter> {
 
 

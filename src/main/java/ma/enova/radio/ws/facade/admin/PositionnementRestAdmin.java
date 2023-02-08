@@ -23,7 +23,7 @@ import ma.enova.radio.zynerator.process.Result;
 
 @Api("Manages positionnement services")
 @RestController
-@RequestMapping("/api/positionnement")
+@RequestMapping("/positionnement")
 public class PositionnementRestAdmin  extends AbstractController<Positionnement, PositionnementDto, PositionnementHistory, PositionnementCriteria, PositionnementHistoryCriteria, PositionnementAdminService, PositionnementConverter> {
 
 

@@ -23,7 +23,7 @@ import ma.enova.radio.zynerator.process.Result;
 
 @Api("Manages typeToxiciteRth services")
 @RestController
-@RequestMapping("/api/typeToxiciteRth")
+@RequestMapping("/typeToxiciteRth")
 public class TypeToxiciteRthRestAdmin  extends AbstractController<TypeToxiciteRth, TypeToxiciteRthDto, TypeToxiciteRthHistory, TypeToxiciteRthCriteria, TypeToxiciteRthHistoryCriteria, TypeToxiciteRthAdminService, TypeToxiciteRthConverter> {
 
 

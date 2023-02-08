@@ -23,7 +23,7 @@ import ma.enova.radio.zynerator.process.Result;
 
 @Api("Manages categoriePersonnel services")
 @RestController
-@RequestMapping("/api/categoriePersonnel")
+@RequestMapping("/categoriePersonnel")
 public class CategoriePersonnelRestAdmin  extends AbstractController<CategoriePersonnel, CategoriePersonnelDto, CategoriePersonnelHistory, CategoriePersonnelCriteria, CategoriePersonnelHistoryCriteria, CategoriePersonnelAdminService, CategoriePersonnelConverter> {
 
 
@@ -66,12 +66,14 @@ public class CategoriePersonnelRestAdmin  extends AbstractController<CategoriePe
 
     @PostMapping("listByCriteria")
     public ResponseEntity<List<CategoriePersonnelDto>> findByCriteria(@RequestBody CategoriePersonnelCriteria criteria) throws Exception {
-        return super.findByCriteria(criteria);
+        ResponseEntity<List<CategoriePersonnelDto>> byCriteria = super.findByCriteria(criteria);
+        return byCriteria;
     }
 
     @PostMapping("paginatedListByCriteria")
     public ResponseEntity<PaginatedList> findPaginatedByCriteria(@RequestBody CategoriePersonnelCriteria criteria) throws Exception {
-        return super.findPaginatedByCriteria(criteria);
+        ResponseEntity<PaginatedList> paginatedByCriteria = super.findPaginatedByCriteria(criteria);
+        return paginatedByCriteria;
     }
     @PostMapping("exportCategoriePersonnels")
     public ResponseEntity<InputStreamResource> export(@RequestBody CategoriePersonnelCriteria criteria) throws Exception {

@@ -23,7 +23,7 @@ import ma.enova.radio.zynerator.process.Result;
 
 @Api("Manages seanceRadiotherapie services")
 @RestController
-@RequestMapping("/api/seanceRadiotherapie")
+@RequestMapping("/seanceRadiotherapie")
 public class SeanceRadiotherapieRestAdmin  extends AbstractController<SeanceRadiotherapie, SeanceRadiotherapieDto, SeanceRadiotherapieHistory, SeanceRadiotherapieCriteria, SeanceRadiotherapieHistoryCriteria, SeanceRadiotherapieAdminService, SeanceRadiotherapieConverter> {
 
 

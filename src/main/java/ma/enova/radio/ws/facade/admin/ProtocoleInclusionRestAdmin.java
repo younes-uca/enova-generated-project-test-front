@@ -23,7 +23,7 @@ import ma.enova.radio.zynerator.process.Result;
 
 @Api("Manages protocoleInclusion services")
 @RestController
-@RequestMapping("/api/protocoleInclusion")
+@RequestMapping("/protocoleInclusion")
 public class ProtocoleInclusionRestAdmin  extends AbstractController<ProtocoleInclusion, ProtocoleInclusionDto, ProtocoleInclusionHistory, ProtocoleInclusionCriteria, ProtocoleInclusionHistoryCriteria, ProtocoleInclusionAdminService, ProtocoleInclusionConverter> {
 
 

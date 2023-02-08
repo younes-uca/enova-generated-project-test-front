@@ -23,7 +23,7 @@ import ma.enova.radio.zynerator.process.Result;
 
 @Api("Manages visee services")
 @RestController
-@RequestMapping("/api/visee")
+@RequestMapping("/visee")
 public class ViseeRestAdmin  extends AbstractController<Visee, ViseeDto, ViseeHistory, ViseeCriteria, ViseeHistoryCriteria, ViseeAdminService, ViseeConverter> {
 
 
@@ -71,7 +71,8 @@ public class ViseeRestAdmin  extends AbstractController<Visee, ViseeDto, ViseeHi
 
     @PostMapping("paginatedListByCriteria")
     public ResponseEntity<PaginatedList> findPaginatedByCriteria(@RequestBody ViseeCriteria criteria) throws Exception {
-        return super.findPaginatedByCriteria(criteria);
+        ResponseEntity<PaginatedList> paginatedByCriteria = super.findPaginatedByCriteria(criteria);
+        return paginatedByCriteria;
     }
     @PostMapping("exportVisees")
     public ResponseEntity<InputStreamResource> export(@RequestBody ViseeCriteria criteria) throws Exception {
