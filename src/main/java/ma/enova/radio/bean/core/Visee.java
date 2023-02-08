@@ -8,6 +8,8 @@ import java.util.Objects;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import ma.enova.radio.zynerator.audit.AuditBusinessObject;
+import ma.enova.radio.zynerator.audit.ReferentielBusinessObject;
+
 import javax.persistence.*;
 import java.util.Objects;
 
@@ -20,7 +22,7 @@ import java.util.Objects;
 @Table(name = "visee")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @SequenceGenerator(name="visee_seq",sequenceName="visee_seq",allocationSize=1, initialValue = 1)
-public class Visee   extends AuditBusinessObject  {
+public class Visee   extends ReferentielBusinessObject {
 
     private Long id;
 

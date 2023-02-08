@@ -23,22 +23,22 @@ public class AuditBusinessObject extends BusinessObject {
     /**
      * created on
      */
-    private LocalDateTime createdOn;
+    protected LocalDateTime createdOn;
 
     /**
      * updated on
      */
-    private LocalDateTime updatedOn;
+    protected LocalDateTime updatedOn;
 
     /**
      * created by
      */
-    private String createdBy;
+    protected String createdBy;
 
     /**
      * updated by
      */
-    private String updatedBy;
+    protected String updatedBy;
 
     /**
      * Constructeur par défaut.
